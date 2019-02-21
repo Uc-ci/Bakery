@@ -2,6 +2,9 @@
   background-color: #fffefd;
   margin-top: 10px; }
 
+.product__pictures {
+  width: 100%; }
+
 .product__name {
   font-size: 18.5px;
   color: #27282c; }
