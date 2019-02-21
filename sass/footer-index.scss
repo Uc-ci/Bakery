@@ -67,4 +67,14 @@
 .footer-index__developer--link {
 	color: #27282c;
 	text-decoration: none;
+
+	&:before {
+		content: '';
+		display: block;
+		width: 73px;
+		height: 3px;
+		border-bottom: 1px solid #c7982b;
+		transform: translateY(15px);
+		margin-left: 60px;
+	}
 }

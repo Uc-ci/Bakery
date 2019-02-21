@@ -58,4 +58,14 @@
 	border: 1px solid #efbe2c;
 	border-radius: 15px;
 	background: none;
+
+	&:hover {
+		color: #fff;
+		background-color: #efbe2c;
+	}
+}
+
+.product-two {
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+	padding-bottom: 10px;
 }
