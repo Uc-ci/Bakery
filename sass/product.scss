@@ -1,0 +1,41 @@
+@import "peremenie.scss";
+
+.product__wrapper {
+	background-color: #fffefd;
+
+	margin-top: 10px;
+}
+
+.product__name {
+	font-size: 18.5px;
+	color: #27282c;
+
+	&--size {
+		font-size: 15px;
+		color: #aaaaaa;
+	}
+}
+
+.product__description {
+	font-size: 15px;
+	color: #aaaaaa;
+	width: 210px;
+}
+
+.product__total {
+	font-family: $fonts_bold;
+	font-size: 20px;
+	color: #27282c;
+}
+
+.product__button {
+	font-family: $fonts_bold;
+	font-size: 14px;
+	color: #27282c;
+
+	padding: 5px 15px;
+
+	border: 1px solid #efbe2c;
+	border-radius: 15px;
+	background: none;
+}

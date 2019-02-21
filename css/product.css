@@ -1,0 +1,30 @@
+.product__wrapper {
+  background-color: #fffefd;
+  margin-top: 10px; }
+
+.product__name {
+  font-size: 18.5px;
+  color: #27282c; }
+  .product__name--size {
+    font-size: 15px;
+    color: #aaaaaa; }
+
+.product__description {
+  font-size: 15px;
+  color: #aaaaaa;
+  width: 210px; }
+
+.product__total {
+  font-family: Proxima Nova B, sans-serif;
+  font-size: 20px;
+  color: #27282c; }
+
+.product__button {
+  font-family: Proxima Nova B, sans-serif;
+  font-size: 14px;
+  color: #27282c;
+  padding: 5px 15px;
+  border: 1px solid #efbe2c;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  background: none; }
