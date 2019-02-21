@@ -2,8 +2,16 @@
   background-color: #fffefd;
   margin-top: 10px; }
 
+.product__name {
+  padding-right: 25px; }
+
 .product__pictures {
   width: 100%; }
+
+.product__content {
+  padding-top: 24px;
+  padding-left: 25px;
+  padding-right: 50px; }
 
 .product__name {
   font-size: 18.5px;
@@ -18,6 +26,21 @@
   width: 210px; }
 
 .product__total {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.product__price {
   font-family: Proxima Nova B, sans-serif;
   font-size: 20px;
   color: #27282c; }

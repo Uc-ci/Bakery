@@ -6,8 +6,18 @@
 	margin-top: 10px;
 }
 
+.product__name {
+	padding-right: 25px;
+}
+
 .product__pictures {
 	width: 100%;
+}
+
+.product__content {
+	padding-top: 24px;
+	padding-left: 25px;
+	padding-right: 50px;
 }
 
 .product__name {
@@ -27,6 +37,12 @@
 }
 
 .product__total {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.product__price {
 	font-family: $fonts_bold;
 	font-size: 20px;
 	color: #27282c;
