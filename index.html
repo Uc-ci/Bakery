@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru-Ru">
+<html lang="ru-Ru" class="page">
 <head>
 	<meta charset="UTF-8">
 	<!-- Uses device width -->
@@ -14,7 +14,8 @@
 	<link rel="stylesheet" href="css/style.css">
 	<title>Пекарня Избушка</title>
 </head>
-<body class="body-index">
+<body class="page-body">
+<div class="page-wrapper">
 	<header class="page-header">
 		<div class="page-header__wrapper">
 			
@@ -55,11 +56,13 @@
 		
 	</header>
 
-	<main class="main-index">
+	<main class="page-main">
 		<section class="product">
 			<div class="product__wrapper">
 				
-				<img src="img/pizza-chicken.jpg" class="product__pictures" alt="Куринная Пицца 40см">
+			<div class="product__pictures">
+				<img src="img/pizza-chicken.jpg" class="product__image" alt="Куринная Пицца 40см">
+			</div>
 
 			<div class="product__content">
 				<div class="product__name">Куриная <span class="product__name--size">40см</span></div>
@@ -79,7 +82,7 @@
 		<section class="basket">
 			<div class="basket__wrapper">
 				<a href="" class="basket__link">
-					<img src="img/m-shopping-basket.png" class="basket__pictures">
+					<img src="img/m-shopping-basket.png" class="basket__pictures" alt="Корзина">
 				</a>
 			</div>
 		</section>
@@ -105,38 +108,38 @@
 		</section>
 	
 	</main>
+</div>
+	<footer class="page-footer">
+		<div class="page-footer__wrapper">
+			<b class="page-footer__contact">8 (3462) 52-45-95</b>
+			<b class="page-footer__contact">izba-nv@mail.ru</b>
 
-	<footer class="footer-index">
-		<div class="footer-index__wrapper">
-			<b class="footer-index__contact">8 (3462) 52-45-95</b>
-			<b class="footer-index__contact">izba-nv@mail.ru</b>
-
-			<ul class="footer-index__social-list">
-				<li class="footer-index__social-item">
-					<a href="#" class="footer-index__social-link">
-						<img src="img/vk-logo.png" class="footer-index__social-logo">
+			<ul class="social-block">
+				<li class="social-block__item">
+					<a href="#" class="social-block__link">
+						<img src="img/vk-logo.png" class="social-block__logo" alt="VK.COM">
 					</a>
 				</li>
-				<li class="footer-index__social-item">
-					<a href="#" class="footer-index__social-link">
-						<img src="img/ok-logo.png" class="footer-index__social-logo">
+				<li class="social-block__item">
+					<a href="#" class="social-block__link">
+						<img src="img/ok-logo.png" class="social-block__logo" alt="OK.RU">
 					</a>
 				</li>
-				<li class="footer-index__social-item">
-					<a href="#" class="footer-index__social-link">
-						<img src="img/facebook-logo.png" class="footer-index__social-logo">
+				<li class="social-block__item">
+					<a href="#" class="social-block__link">
+						<img src="img/facebook-logo.png" class="social-block__logo" alt="Facebook.com">
 					</a>
 				</li>
-				<li class="footer-index__social-item">
-					<a href="#" class="footer-index__social-link">
-						<img src="img/twitter-logo.png" class="footer-index__social-logo">
+				<li class="social-block__item">
+					<a href="#" class="social-block__link">
+						<img src="img/twitter-logo.png" class="social-block__logo" alt="Twitter.com">
 					</a>
 				</li>
 			</ul>
 
-			<span class="footer-index__copyright">Пекарня Избушка © 2018. Все права защищены</span>
+			<span class="page-footer__copyright">Пекарня Избушка © 2018. Все права защищены</span>
 
-			<span class="footer-index__developer">Разработка Сайтов<a href="#" class="footer-index__developer footer-index__developer--link">Gold Carrot</a></span>
+			<span class="page-footer__developer">Разработка Сайтов<a href="#" class="page-footer__developer page-footer__developer--link">Gold Carrot</a></span>
 		</div>
 	</footer>
 </body>
