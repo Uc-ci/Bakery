@@ -110,7 +110,10 @@ html {
   border: 1px solid transparent;
   -webkit-border-radius: 15px;
           border-radius: 15px;
-  padding: 5px 5px; }
+  padding: 5px 5px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
   .m-header-navigation__link:hover {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -197,7 +200,10 @@ html {
   border: 1px solid #efbe2c;
   -webkit-border-radius: 15px;
           border-radius: 15px;
-  background: none; }
+  background: none;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
   .product__button:hover {
     color: #fff;
     background-color: #efbe2c; }
@@ -282,8 +288,8 @@ html {
   background-image: -o-linear-gradient(left, #efbe2c 0%, #e69824 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(#efbe2c), to(#e69824));
   background-image: linear-gradient(to right, #efbe2c 0%, #e69824 100%);
-  -webkit-border-radius: 25% 25% 0 0;
-          border-radius: 25% 25% 0 0; }
+  -webkit-border-radius: 40% 40% 0 0 / 60% 60% 40% 40%;
+          border-radius: 40% 40% 0 0 / 60% 60% 40% 40%; }
 
 .page-footer__contact {
   font-family: Proxima Nova B, sans-serif;

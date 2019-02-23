@@ -12,13 +12,57 @@
 	<link rel="stylesheet" href="css/normalsize.css">
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/style.css">
+	<!-- Media Query -->
+	<link rel="stylesheet" href="css/media.css">
 	<title>Пекарня Избушка</title>
 </head>
 <body class="page-body">
 <div class="page-wrapper">
 	<header class="page-header">
 		<div class="page-header__wrapper">
-			
+	<div class="page-header__head-wrapper">
+		<div class="page-header__pictures pictures-block">
+			<a class="pictures-block__link">
+				<img src="img/header-logo.png" class=pictures-block__logo alt="Логотип Пекарни">
+			</a>
+
+			<a class="pictures-block__link">
+				<img src="img/header-logo-bakery.png" class="pictures-block__logo" alt="Пекарня Избушка">
+			</a>
+		</div>
+
+		<nav class="page-header__navigation-block navigation-block">
+			<ul class="navigation-block__list">
+				<li class="navigation-block__item">
+					<a href="#" class="navigation-block__link">Акции</a>
+				</li>
+				<li class="navigation-block__item">
+					<a href="#" class="navigation-block__link">Доставка</a>
+				</li>
+				<li class="navigation-block__item">
+					<a href="#" class="navigation-block__link">О пекарне</a>
+				</li>
+				<li class="navigation-block__item">
+					<a href="#" class="navigation-block__link">Контакты</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="page-header__contact">
+			<span class="page-header__time">Ежедневно 8:00-20:00</span>
+			<b class="page-header__tel">8 (3462) 52-45-95</b>
+		</div>
+
+		<button type="button" class="page-header__city">Нижневартовск</button>
+
+		<div class="page-header__purchases">
+			<a href="#" class="page-header__link-basket">
+				<img src="img/shopping-basket.png" class="page-header__basket" alt="Корзина">
+			</a>
+		</div>
+	</div>
+
+
 		<div class="page-header__block-menu">
 		<a href="index.html" class="page-header__head-link">
 			<img src="img/m-logo-index.png" class="page-header__logo" alt="Пекарня Избушка">
@@ -46,6 +90,15 @@
 				<li class="m-header-navigation__item">
 					<a class="m-header-navigation__link">Горячее</a>
 				</li>
+				<li class="m-header-navigation__item">
+					<a class="m-header-navigation__link">Напитки</a>
+				</li>
+				<li class="m-header-navigation__item">
+					<a class="m-header-navigation__link">Салаты</a>
+				</li>
+				<li class="m-header-navigation__item">
+					<a class="m-header-navigation__link">Полуфабрикаты</a>
+				</li>
 			</ul>
 		</nav>
 		</div>
@@ -53,61 +106,221 @@
 		<div class="page-header__shadow-block">
 			<h1 class="page-header__product">Пицца</h1>
 		</div>
-		
+
 	</header>
 
 	<main class="page-main">
-		<section class="product">
-			<div class="product__wrapper">
+		<div class="product__pizza" id="pizza">
+			<section class="product">
+				<div class="product__wrapper">
+					
+				<div class="product__pictures">
+					<img src="img/pizza-chicken.jpg" class="product__image" alt="Куринная Пицца 40см">
+					<img src="img/kurinaya.jpg" class="product__image" alt="Куринная Пицца 40см">
+				</div>
+
+				<div class="product__content">
+					<div class="product__name">Куриная <span class="product__name--size">40см</span></div>
+
+					<p class="product__description">Куриное филе, лук репчатый,шампиньоны, маслины помидоры, сыр, соус
+					</p>
+				<div class="product__total">
+					<b class="product__price">750 руб</b>
+
+					<button class="product__button">В корзину</button>
+				</div>
+				</div>
 				
-			<div class="product__pictures">
-				<img src="img/pizza-chicken.jpg" class="product__image" alt="Куринная Пицца 40см">
-			</div>
-
-			<div class="product__content">
-				<div class="product__name">Куриная <span class="product__name--size">40см</span></div>
-
-				<p class="product__description">Куриное филе, лук репчатый,шампиньоны, маслины помидоры, сыр, соус
-				</p>
-			<div class="product__total">
-				<b class="product__price">750 руб</b>
-
-				<button class="product__button">В корзину</button>
-			</div>
-			</div>
+				</div>
+			</section>
 			
-			</div>
-		</section>
-		
-		<section class="basket">
-			<div class="basket__wrapper">
-				<a href="" class="basket__link">
-					<img src="img/m-shopping-basket.png" class="basket__pictures" alt="Корзина">
-				</a>
-			</div>
-		</section>
-		
-		<section class="product-two">
-			<div class="product__wrapper">
+			<section class="basket">
+				<div class="basket__wrapper">
+					<a href="" class="basket__link">
+						<img src="img/m-shopping-basket.png" class="basket__pictures" alt="Корзина">
+					</a>
+				</div>
+			</section>
+			
+			<section class="product">
+				<div class="product__wrapper">
+					
+				<div class="product__pictures">
+					<img src="img/pizza-chicken.jpg" class="product__image" alt="Куринная Пицца 40см">
+					<img src="img/pitstsa1morskaya.jpg" class="product__image" alt="Куринная Пицца 40см">
+				</div>
+
+				<div class="product__content">
+					<div class="product__name">Нью-Йорк <span class="product__name--size">40см</span></div>
+
+					<p class="product__description">Салями, сосиски, шампиньоны, перец болгарский, сыр, соус
+					</p>
+				<div class="product__total">
+					<b class="product__price">790 руб</b>
+
+					<button class="product__button">В корзину</button>
+				</div>
+				</div>
 				
-			<div class="product__pictures">
-				<img src="img/pizza-chicken.jpg" class="product__image" alt="Куринная Пицца 40см">
-			</div>
+				</div>
+			</section>
 
-			<div class="product__content">
-				<div class="product__name">Куриная <span class="product__name--size">40см</span></div>
+			<section class="basket">
+				<div class="basket__wrapper">
+					<a href="" class="basket__link">
+						<img src="img/m-shopping-basket.png" class="basket__pictures" alt="Корзина">
+					</a>
+				</div>
+			</section>
 
-				<p class="product__description">Куриное филе, лук репчатый,шампиньоны, маслины помидоры, сыр, соус
-				</p>
-			<div class="product__total">
-				<b class="product__price">750 руб</b>
+			<section class="product">
+				<div class="product__wrapper">
+					
+				<div class="product__pictures">
+					<img src="img/pizza-chicken.jpg" class="product__image" alt="Куринная Пицца 40см">
+					<img src="img/syrnaya.jpg" class="product__image" alt="Куринная Пицца 40см">
+				</div>
 
-				<button class="product__button">В корзину</button>
-			</div>
-			</div>
+				<div class="product__content">
+					<div class="product__name">Патио <span class="product__name--size">40см</span></div>
+
+					<p class="product__description">Ветчина, салями, яйцо, брынза, сыр, соус
+					</p>
+				<div class="product__total">
+					<b class="product__price">1200 руб</b>
+
+					<button class="product__button">В корзину</button>
+				</div>
+				</div>
+				
+				</div>
+			</section>
+
+			<section class="basket">
+				<div class="basket__wrapper">
+					<a href="" class="basket__link">
+						<img src="img/m-shopping-basket.png" class="basket__pictures" alt="Корзина">
+					</a>
+				</div>
+			</section>
+
+			<section class="product">
+				<div class="product__wrapper">
+					
+				<div class="product__pictures">
+					<img src="img/pizza-chicken.jpg" class="product__image" alt="Куринная Пицца 40см">
+					<img src="img/kurinaya.jpg" class="product__image" alt="Куринная Пицца 40см" width="270" height="180">
+				</div>
+
+				<div class="product__content">
+					<div class="product__name product__name--fixed">Пицца с семгой и креветками
+					<span class="product__name--size">40см</span></div>
+
+					<p class="product__description">Куриное филе, лук репчатый,шампиньоны, маслины помидоры, сыр, соус
+					</p>
+				<div class="product__total">
+					<b class="product__price">750 руб</b>
+
+					<button class="product__button">В корзину</button>
+				</div>
+				</div>
+				
+				</div>
+			</section>
 			
-			</div>
-		</section>
+			<section class="basket">
+				<div class="basket__wrapper">
+					<a href="" class="basket__link">
+						<img src="img/m-shopping-basket.png" class="basket__pictures" alt="Корзина">
+					</a>
+				</div>
+			</section>
+			
+			<section class="product">
+				<div class="product__wrapper">
+					
+				<div class="product__pictures">
+					<img src="img/pizza-chicken.jpg" class="product__image" alt="Куринная Пицца 40см">
+					<img src="img/pitstsa1morskaya.jpg" class="product__image" alt="Куринная Пицца 40см">
+				</div>
+
+				<div class="product__content">
+					<div class="product__name">Куриная <span class="product__name--size">40см</span></div>
+
+					<p class="product__description">Куриное филе, лук репчатый,шампиньоны, маслины помидоры, сыр, соус
+					</p>
+				<div class="product__total">
+					<b class="product__price">750 руб</b>
+
+					<button class="product__button">В корзину</button>
+				</div>
+				</div>
+				
+				</div>
+			</section>
+
+			<section class="basket">
+				<div class="basket__wrapper">
+					<a href="" class="basket__link">
+						<img src="img/m-shopping-basket.png" class="basket__pictures" alt="Корзина">
+					</a>
+				</div>
+			</section>
+
+			<section class="product">
+				<div class="product__wrapper">
+					
+				<div class="product__pictures">
+					<img src="img/pizza-chicken.jpg" class="product__image" alt="Куринная Пицца 40см">
+					<img src="img/syrnaya.jpg" class="product__image" alt="Куринная Пицца 40см">
+				</div>
+
+				<div class="product__content">
+					<div class="product__name">Нью-Йорк <span class="product__name--size">40см</span></div>
+
+					<p class="product__description">Салями, сосиски, шампиньоны, перец болгарский, сыр, соус
+					</p>
+				<div class="product__total">
+					<b class="product__price">790 руб</b>
+
+					<button class="product__button">В корзину</button>
+				</div>
+				</div>
+				
+				</div>
+			</section>
+
+			<section class="basket">
+				<div class="basket__wrapper">
+					<a href="" class="basket__link">
+						<img src="img/m-shopping-basket.png" class="basket__pictures" alt="Корзина">
+					</a>
+				</div>
+			</section>
+
+			<section class="product">
+				<div class="product__wrapper">
+					
+				<div class="product__pictures">
+					<img src="img/pizza-chicken.jpg" class="product__image" alt="Куринная Пицца 40см">
+					<img src="img/syrnaya.jpg" class="product__image" alt="Куринная Пицца 40см">
+				</div>
+
+				<div class="product__content">
+					<div class="product__name">Патио <span class="product__name--size">40см</span></div>
+
+					<p class="product__description">Ветчина, салями, яйцо, брынза, сыр, соус
+					</p>
+				<div class="product__total">
+					<b class="product__price">1200 руб</b>
+
+					<button class="product__button">В корзину</button>
+				</div>
+				</div>
+				
+				</div>
+			</section>
+		</div>
 	
 	</main>
 </div>
