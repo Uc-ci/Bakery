@@ -65,6 +65,8 @@
 	border-radius: 15px;
 	background: none;
 	transition: 1s;
+	cursor: pointer;
+	outline: none;
 
 	&:hover {
 		color: #fff;

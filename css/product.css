@@ -61,7 +61,9 @@
   background: none;
   -webkit-transition: 1s;
   -o-transition: 1s;
-  transition: 1s; }
+  transition: 1s;
+  cursor: pointer;
+  outline: none; }
   .product__button:hover {
     color: #fff;
     background-color: #efbe2c; }
