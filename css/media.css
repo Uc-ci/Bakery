@@ -297,6 +297,9 @@
     font-size: 16px; }
   .page-footer__developer--link:before {
     display: none; }
+  .social-block {
+    margin: 0;
+    padding: 0; }
   .social-block__logo {
     padding-right: 50px; }
   .product__name-block {
