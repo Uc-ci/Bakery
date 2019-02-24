@@ -9,10 +9,8 @@ html {
 .page-body {
   min-width: 320px;
   background-color: #fffefd;
-  background-image: url("../img/body-index-bg.jpg");
-  background-repeat: repeat-y;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-image: url("../img/bg-wrapper.png");
+  background-repeat: repeat;
   font-family: 'Proxima Nova Re', sans-serif;
   font-size: 14px;
   overflow-x: hidden;

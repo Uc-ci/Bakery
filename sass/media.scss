@@ -32,7 +32,7 @@
 	.page-header__shadow-block {
 		display: none;
 	}
-	
+
 	.page-body {
 		font-size: 14px;
 	}
@@ -106,7 +106,7 @@
 	}
 
 	.product-navigation__block {
-		padding-left: 20px;
+		padding-left: 40px;
 		padding-right: 50px;
 	}
 
@@ -124,12 +124,8 @@
 		justify-content: space-between;
 	}
 
-	.product__list {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		padding: 0 20px;
+	.product {
+		box-shadow: none;
 	}
 
 	.product__pictures {
@@ -174,7 +170,8 @@
 @media (max-width: 1199px) {
 	.page-header__city,
 	.page-header__contact,
-	.benefits{
+	.benefits,
+	.page-header__basket{
 		display: none;
 	}
 }
@@ -217,32 +214,38 @@
 
 	.product__list-wrapper {
 		width: 100%;
-		max-width: 1195px;
+		max-width: 1200px;
 		margin: 0 auto;
 	}
 
 	.product__list {
+		display: flex;
 		justify-content: flex-start;
-		flex-basis: 100%;
 		flex-wrap: wrap;
-		margin-right: -40px;
+		flex-basis: 100%;
+		margin-left: -40px;
 	}
 
-	.product__wrapper {
-		margin-right: 40px;
+	.product {
+		margin-left: 40px;
+		width: calc(100% / 4 - 40px);
+		flex: 0 1 270px;
 	}
 
 	.product__name-block {
-		display: block;
-		padding-left: 55px;
-		margin-right: auto;
 		box-shadow: none;
+		display: flex;
+		justify-content: space-between;
+		padding-left: 70px;
 	}
 
 	.product__name-text {
 		font-family: $fonts_bold;
 		font-size: 30px;
 		color: #222328;
+
+		margin: 0;
+		padding: 55px 0 20px 0;
 
 		text-transform: uppercase;
 	}
@@ -295,4 +298,15 @@
 	.page-footer__developer--link:before {
 		display: none;
 	}
+	
+	.social-block__logo {
+		padding-right: 50px;
+	}
+
+	.product__name-block {
+		width: 100%;
+	}
+
+	
 }
+

@@ -8,10 +8,8 @@
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin: 0 auto;
   margin-top: 50px; }
-
-.benefits__text {
-  padding-left: 165px; }
 
 .benefits__title {
   font-family: "Proxima Nova Bl", sans-serif;
