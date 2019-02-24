@@ -215,17 +215,23 @@
 		}
 	}
 
+	.product__list-wrapper {
+		width: 100%;
+		max-width: 1195px;
+		margin: 0 auto;
+	}
+
 	.product__list {
 		justify-content: flex-start;
 		flex-basis: 100%;
 		flex-wrap: wrap;
+		margin-right: -40px;
 	}
 
 	.product__wrapper {
-		margin-left: 40px;
-		width: 270px;
+		margin-right: 40px;
 	}
-	
+
 	.product__name-block {
 		display: block;
 		padding-left: 55px;
@@ -273,6 +279,8 @@
 		padding: 0;
 		text-align: left;
 		margin: 0;
+		color: #acacac;
+		font-size: 16px;
 	}
 
 	.page-footer__developer {
@@ -280,6 +288,8 @@
 		width: auto;
 		text-align: left;
 		margin: 0;
+		color: #acacac;
+		font-size: 16px;
 	}
 
 	.page-footer__developer--link:before {
