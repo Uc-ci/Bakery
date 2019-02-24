@@ -1,3 +1,26 @@
+.product {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.product__name-block {
+  -webkit-box-shadow: inset 0 6px 7px -7px rgba(0, 0, 0, 0.3), inset 0 -5px 7px -7px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 6px 7px -7px rgba(0, 0, 0, 0.3), inset 0 -5px 7px -7px rgba(0, 0, 0, 0.2); }
+
+.product__name-text {
+  font-family: "Proxima Nova Bl", sans-serif;
+  font-size: 32px;
+  color: #27282c;
+  text-align: center;
+  margin: 0;
+  padding: 18px 0 15px 0; }
+
 .product__wrapper {
   background-color: #fffefd;
   margin-top: 10px; }
