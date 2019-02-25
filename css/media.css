@@ -149,12 +149,10 @@
     -webkit-border-radius: 10px;
             border-radius: 10px; }
   .product__content {
-    padding-top: 24px;
     padding-left: 0px;
     padding-right: 0px; }
   .product__description {
-    width: 210px;
-    height: 51px;
+    width: auto;
     padding: 15px 0 0 0;
     margin: 0; }
   .product__total {
@@ -189,10 +187,11 @@
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .page-wrapper {
-    background-image: url("../img/ornaments top.png");
+    background-image: url("../img/ornaments__top.png");
     background-repeat: no-repeat;
-    -webkit-background-size: auto auto;
-            background-size: auto; }
+    -webkit-background-size: contain;
+            background-size: contain;
+    background-position: top; }
   .page-footer {
     background: url("../img/ornaments_bottom.png");
     background-repeat: no-repeat;
@@ -258,6 +257,8 @@
     -webkit-flex: 0 1 270px;
         -ms-flex: 0 1 270px;
             flex: 0 1 270px; }
+  .product__lead {
+    height: 80px; }
   .product__name-block {
     -webkit-box-shadow: none;
             box-shadow: none;

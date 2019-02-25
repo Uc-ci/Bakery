@@ -150,15 +150,13 @@
 	}
 
 	.product__content {
-		padding-top: 24px;
 		padding-left: 0px;
 		padding-right: 0px;
 	}
 
 	.product__description {
-		width: 210px;
-		height: 51px;
-
+		width: auto;
+		
 		padding: 15px 0 0 0;
 		margin: 0;
 	}
@@ -202,9 +200,10 @@
 	}
 
 	.page-wrapper {
-		background-image: url('../img/ornaments top.png');
+		background-image: url('../img/ornaments__top.png');
 		background-repeat: no-repeat;
-		background-size: auto;
+		background-size: contain;
+		background-position: top;
 	}
 
 	.page-footer {
@@ -266,6 +265,10 @@
 		margin-left: 40px;
 		width: calc(100% / 4 - 40px);
 		flex: 0 1 270px;
+	}
+
+	.product__lead {
+		height: 80px;
 	}
 
 	.product__name-block {
@@ -350,5 +353,4 @@
 	.contact-block__tel {
 		font-size: 18.3px;
 	}
-
 }
