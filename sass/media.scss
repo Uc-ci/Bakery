@@ -161,14 +161,6 @@
 		margin: 0;
 	}
 
-	.product__total {
-		padding-top: 60px;
-	}
-
-	.product__total-fixed {
-		transform: translateY(-20px);
-	}
-
 	.navigation-block {
 		padding: 0;
 	}
@@ -265,6 +257,28 @@
 		margin-left: 40px;
 		width: calc(100% / 4 - 40px);
 		flex: 0 1 270px;
+		height: 430px;
+	}
+
+	.product__wrapper {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	.product__content {
+		display: flex; 
+		flex-direction: column;
+		height: 100%;
+	}
+
+	.product__interactive {
+		margin-top: auto;
+		margin-bottom: 30px;
+	}
+
+	.product__total {
+		padding-top: 0;
 	}
 
 	.product__lead {
