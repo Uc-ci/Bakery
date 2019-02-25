@@ -45,7 +45,11 @@
 		display: flex;
 		justify-content: space-between;
 
-		padding: 25px 20px 0 20px;
+		padding: 24px 20px 0 20px;
+	}
+
+	.pictures-block__logo--company {
+		padding-left: 12px;
 	}
 
 	.pictures-block {
@@ -66,14 +70,19 @@
 	}
 
 	.navigation-block__item {
-		padding: 0 15px;
+		padding: 0;
+		padding-right: 42px;
 	}
 
 	.navigation-block__link {
-		font-size: 16px;
+		font-size: 18px;
 		color: #27282c;
 
 		text-decoration: none;
+
+		&--active {
+			font-size: 18px;
+		}
 	}
 
 	.contact-block {
@@ -105,11 +114,6 @@
 		height: auto;
 	}
 
-	.product-navigation__block {
-		padding-left: 40px;
-		padding-right: 50px;
-	}
-
 	.product-navigation__list {
 		justify-content: space-around;
 	}
@@ -126,17 +130,23 @@
 
 	.product {
 		box-shadow: none;
+		padding-bottom: 0;
+	}
+
+	.product__wrapper {
+		background-color: transparent;
 	}
 
 	.product__pictures {
-		width: 100%;
+		width: 270px;
 		height: 186px;
 	}
 
 	.product__image {
-		width: 279px;
+		display: block;
+		width: 270px;
 		height: 186px;
-		border-radius: 3%;
+		border-radius: 10px;
 	}
 
 	.product__content {
@@ -171,7 +181,8 @@
 	.page-header__city,
 	.page-header__contact,
 	.benefits,
-	.page-header__basket{
+	.page-header__basket,
+	.product__interactive {
 		display: none;
 	}
 }
@@ -182,13 +193,27 @@
 	}
 
 	.product-navigation__list {
-		justify-content: space-around;
+		padding: 0 20px 0 20px;
+		justify-content: space-between;
 	}
 
 	.page-header__head-wrapper {
-		justify-content: space-around;
+		justify-content: space-between;
 	}
-	
+
+	.page-wrapper {
+		background-image: url('../img/ornaments top.png');
+		background-repeat: no-repeat;
+		background-size: auto;
+	}
+
+	.page-footer {
+		background: url('../img/ornaments_bottom.png');
+		background-repeat: no-repeat;
+		background-position: top;
+		background-size: cover;
+	}
+
 	.page-header__city {
 		font-family: 'Proxima Nova Re', sans-serif;
 		font-size: 14px;
@@ -212,6 +237,15 @@
 		}
 	}
 
+	.product-navigation {
+		margin: 0;
+		padding: 10px 0;
+	}
+
+	.product-navigation__item {
+		padding: 0;
+	}
+
 	.product__list-wrapper {
 		width: 100%;
 		max-width: 1200px;
@@ -227,6 +261,8 @@
 	}
 
 	.product {
+		display: flex;
+		flex-direction: column;
 		margin-left: 40px;
 		width: calc(100% / 4 - 40px);
 		flex: 0 1 270px;
@@ -235,8 +271,9 @@
 	.product__name-block {
 		box-shadow: none;
 		display: flex;
-		justify-content: space-between;
-		padding-left: 70px;
+		margin-top: 75px;
+		margin-left: 40px;
+		width: 100%;
 	}
 
 	.product__name-text {
@@ -245,15 +282,19 @@
 		color: #222328;
 
 		margin: 0;
-		padding: 55px 0 20px 0;
+		padding: 0;
 
 		text-transform: uppercase;
 	}
 
+	.product__name-text {
+		margin: 0;
+		padding: 0;
+	}
+
 	.page-footer__wrapper {
 		background-image: none;
-		border-radius: none;
-		
+		border-radius: 0;
 		padding: 0 20px;
 	}
 
@@ -261,8 +302,6 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		padding-left: 20px;
-		padding-right: 20px;
 		padding-bottom: 20px;
 
 		border-bottom: 3px solid #efefef;
@@ -272,7 +311,7 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		padding: 40px 20px 0 20px;
+		padding: 40px 0 0 0;
 
 	}
 
@@ -305,13 +344,11 @@
 	}
 
 	.social-block__logo {
-		padding-right: 50px;
+		padding-right: 18px;
 	}
 
-	.product__name-block {
-		width: 100%;
+	.contact-block__tel {
+		font-size: 18.3px;
 	}
-
 
 }
-

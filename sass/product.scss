@@ -23,12 +23,7 @@
 
 .product__wrapper {
 	background-color: #fffefd;
-
-	margin-top: 10px;
-}
-
-.product__name {
-	padding-right: 25px;
+	margin-top: 15px;
 }
 
 .product__image {
@@ -49,7 +44,7 @@
 
 .product__name {
 	font-size: 18.5px;
-	color: #27282c;
+	color: #222328;
 
 	&--size {
 		font-size: 15px;
@@ -71,12 +66,16 @@
 }
 
 .product__price {
+	display: block;
+
 	font-family: $fonts_bold;
 	font-size: 20px;
 	color: #27282c;
 }
 
 .product__button {
+	display: block;
+
 	font-family: $fonts_bold;
 	font-size: 14px;
 	color: #27282c;
@@ -99,4 +98,30 @@
 .product {
 	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
 	padding-bottom: 10px;
+}
+
+.product__interactive {
+	display: flex;
+	justify-content: space-around;
+
+	background-color: #efefef;
+	border-radius: 15px;
+
+	list-style: none;
+	margin: 52px 0 0 0;
+	padding: 8px 0;
+}
+
+.product__interactive-list {
+	text-align: center;
+	font-size: 13px;
+	color: #acacac;
+	cursor: pointer;
+
+	&--active {
+		color: #222328;
+		background-color: #ffffff;
+		box-shadow: 0px 0px 3px 0px rgba(34, 35, 40, 0.8);
+		border-radius: 15px;
+	}
 }

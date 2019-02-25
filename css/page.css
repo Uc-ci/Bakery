@@ -6,7 +6,7 @@
   display: block; }
 
 .page-footer, .page-wrapper:after {
-  height: 10px; }
+  min-height: 10px; }
 
 .page-wrapper {
   min-height: 94%;

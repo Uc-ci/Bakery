@@ -6,7 +6,7 @@
   display: block; }
 
 .page-footer, .page-wrapper:after {
-  height: 10px; }
+  min-height: 10px; }
 
 .page-wrapper {
   min-height: 94%;
@@ -22,7 +22,6 @@ html {
 
 .page-body {
   min-width: 320px;
-  background-color: #fffefd;
   background-image: url("../img/bg-wrapper.png");
   background-repeat: repeat;
   font-family: 'Proxima Nova Re', sans-serif;
@@ -116,7 +115,7 @@ html {
 .product-navigation__link {
   font-size: 14px;
   color: #cccccc;
-  font-weight: bold;
+  font-family: Proxima Nova B, sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
@@ -166,10 +165,7 @@ html {
 
 .product__wrapper {
   background-color: #fffefd;
-  margin-top: 10px; }
-
-.product__name {
-  padding-right: 25px; }
+  margin-top: 15px; }
 
 .product__image {
   display: block;
@@ -186,7 +182,7 @@ html {
 
 .product__name {
   font-size: 18.5px;
-  color: #27282c; }
+  color: #222328; }
   .product__name--size {
     font-size: 15px;
     color: #aaaaaa; }
@@ -213,11 +209,13 @@ html {
   padding-top: 10px; }
 
 .product__price {
+  display: block;
   font-family: Proxima Nova B, sans-serif;
   font-size: 20px;
   color: #27282c; }
 
 .product__button {
+  display: block;
   font-family: Proxima Nova B, sans-serif;
   font-size: 14px;
   color: #27282c;
@@ -239,6 +237,34 @@ html {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
   padding-bottom: 10px; }
+
+.product__interactive {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  background-color: #efefef;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  list-style: none;
+  margin: 52px 0 0 0;
+  padding: 8px 0; }
+
+.product__interactive-list {
+  text-align: center;
+  font-size: 13px;
+  color: #acacac;
+  cursor: pointer; }
+  .product__interactive-list--active {
+    color: #222328;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(34, 35, 40, 0.8);
+            box-shadow: 0px 0px 3px 0px rgba(34, 35, 40, 0.8);
+    -webkit-border-radius: 15px;
+            border-radius: 15px; }
 
 .basket {
   margin-top: 10px;
@@ -288,10 +314,12 @@ html {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
-  padding: 10px 0 0 0; }
+  padding: 10px 0 0 0;
+  margin: 0; }
 
 .social-block__item {
-  padding: 0 5px; }
+  padding: 0 5px;
+  margin: 0; }
 
 .social-block__logo {
   display: block;
@@ -369,7 +397,7 @@ html {
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 0 auto;
-  margin-top: 50px; }
+  margin-top: 140px; }
 
 .benefits__title {
   font-family: "Proxima Nova Bl", sans-serif;
@@ -386,7 +414,7 @@ html {
   color: #000000;
   width: 375px;
   margin: 0;
-  padding: 15px 0 0 0; }
+  padding: 14px 0 0 0; }
 
 .benefits__link {
   display: inline-block;
@@ -399,7 +427,7 @@ html {
   -webkit-border-radius: 50px;
           border-radius: 50px;
   padding: 15px 50px;
-  margin-top: 75px;
+  margin-top: 79px;
   -webkit-box-shadow: 0px 5px 20px 0px rgba(239, 190, 44, 0.004);
           box-shadow: 0px 5px 20px 0px rgba(239, 190, 44, 0.004);
   -webkit-transition: 0.5s;
@@ -418,9 +446,9 @@ html {
   width: 100%;
   height: 496px;
   margin-left: 40px;
-  -webkit-transform: translateY(-40px);
-      -ms-transform: translateY(-40px);
-          transform: translateY(-40px); }
+  -webkit-transform: translateY(-80px);
+      -ms-transform: translateY(-80px);
+          transform: translateY(-80px); }
 
 .benefit__image {
   display: block;

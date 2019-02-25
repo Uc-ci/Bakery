@@ -30,7 +30,7 @@
 .product-navigation__link {
   font-size: 14px;
   color: #cccccc;
-  font-weight: bold;
+  font-family: Proxima Nova B, sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
