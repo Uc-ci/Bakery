@@ -34,23 +34,15 @@
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
-  border: 1px solid transparent;
   -webkit-border-radius: 15px;
           border-radius: 15px;
-  padding: 5px 5px;
+  padding: 7px 15px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
   .product-navigation__link:hover {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    border: 1px solid #eee; }
-
-.product-navigation__link--active {
-  color: #27282c;
-  border: 1px solid #fff;
-  -webkit-border-radius: 15px;
-          border-radius: 15px;
-  padding: 5px;
-  -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.1); }
+    color: #27282c;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1); }

@@ -352,7 +352,13 @@
     margin-top: auto;
     margin-bottom: 27px; }
   .product__total {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0; }
+  .product__price {
+    font-size: 24px; }
   .product__name-block {
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -448,4 +454,6 @@
     color: #27282c;
     padding: 7px 20px;
     -webkit-border-radius: 25px;
-            border-radius: 25px; } }
+            border-radius: 25px; }
+  .product__button {
+    padding: 6px 23px 6px 23px; } }
