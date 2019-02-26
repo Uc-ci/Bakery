@@ -189,9 +189,43 @@
 		flex-direction: column;
 	}
 
+	.product__name {
+		max-width: 220px;
+	}
+
+	.product__description {
+		max-width: 220px;
+	}
+
 	.product__total {
 		margin: 0;
 		padding: 0;
+
+		margin: 15px 0;
+	}
+
+	.pictures-block {
+		display: none;
+	}
+
+	.page-header__pictures {
+		display: flex;
+	}
+
+	.navigation-block__item {
+		padding-right: 20px;
+	}
+
+	.page-header__navigation-block {
+		margin-left: 60px;
+	}
+	
+	.navigation-block__down {
+		display: none;
+	}
+
+	.product__name-block {
+		box-shadow: none;
 	}
 }
 
