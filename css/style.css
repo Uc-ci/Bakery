@@ -248,14 +248,16 @@ html {
   -webkit-border-radius: 15px;
           border-radius: 15px;
   list-style: none;
-  margin: 52px 0 0 0;
-  padding: 8px 0; }
+  /*margin: 52px 0 0 0;*/
+  margin: 0;
+  padding: 0; }
 
 .product__interactive-list {
   text-align: center;
   font-size: 13px;
   color: #acacac;
-  cursor: pointer; }
+  cursor: pointer;
+  padding: 10px 20px; }
   .product__interactive-list--active {
     color: #222328;
     background-color: #ffffff;

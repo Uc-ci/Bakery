@@ -217,7 +217,9 @@
     display: none; }
   .product__name-block {
     -webkit-box-shadow: none;
-            box-shadow: none; } }
+            box-shadow: none; }
+  .product-navigation {
+    margin: auto; } }
 
 @media (max-width: 1199px) {
   .page-header__city,
@@ -271,8 +273,12 @@
       height: 1px;
       border-bottom: 1px dashed #515563; }
   .product-navigation {
-    margin: 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
     padding: 10px 0; }
+  .product-navigation__list {
+    padding: 0; }
   .product-navigation__item {
     padding: 0; }
   .product__list-wrapper {
@@ -312,7 +318,8 @@
     -webkit-flex: 0 1 270px;
         -ms-flex: 0 1 270px;
             flex: 0 1 270px;
-    height: 430px; }
+    height: 430px;
+    margin-top: 25px; }
   .product__wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -334,7 +341,13 @@
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: 100%; }
+  .product__description {
+    margin-bottom: auto; }
   .product__interactive {
     margin-top: auto;
     margin-bottom: 27px; }
@@ -422,4 +435,17 @@
     color: #aaaaaa; }
   .contact-block__tel {
     font-size: 17.4px;
-    font-family: Proxima Nova B, sans-serif; } }
+    font-family: Proxima Nova B, sans-serif; }
+  .product-navigation__link {
+    font-size: 18px;
+    font-family: Proxima Nova B, sans-serif;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+    .product-navigation__link:hover {
+      color: #27282c; }
+  .product-navigation__link--active {
+    color: #27282c;
+    padding: 7px 20px;
+    -webkit-border-radius: 25px;
+            border-radius: 25px; } }
