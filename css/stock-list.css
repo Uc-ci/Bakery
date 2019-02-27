@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .stock-list__name-block {
   margin-top: 11px; }
 
@@ -36,6 +37,10 @@
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 20px 20px 17px 20px; }
 
 .stock-list__title {
@@ -54,8 +59,25 @@
   font-family: Proxima Nova B, sans-serif;
   font-size: 20px;
   color: #27282c;
-  padding-top: 25px;
+  padding-top: 40px;
   text-align: center; }
+  .stock-list__price:after {
+    content: '1200 руб';
+    font-size: 15px;
+    color: #aaaaaa;
+    text-decoration: line-through;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: translateY(-40px);
+        -ms-transform: translateY(-40px);
+            transform: translateY(-40px);
+    margin-left: 100px; }
 
 .stock-list__promo {
   display: block;
