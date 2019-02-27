@@ -15,8 +15,10 @@
   background-image: -o-linear-gradient(left, #efbe2c 0%, #e69824 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(#efbe2c), to(#e69824));
   background-image: linear-gradient(to right, #efbe2c 0%, #e69824 100%);
-  -webkit-border-radius: 40% 40% 0 0 / 60% 60% 40% 40%;
-          border-radius: 40% 40% 0 0 / 60% 60% 40% 40%; }
+  -webkit-border-top-left-radius: 50% 30%;
+          border-top-left-radius: 50% 30%;
+  -webkit-border-top-right-radius: 50% 30%;
+          border-top-right-radius: 50% 30%; }
 
 .page-footer__contact {
   font-family: Proxima Nova B, sans-serif;

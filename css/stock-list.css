@@ -81,12 +81,17 @@
 
 .stock-list__promo {
   display: block;
+  font-family: Proxima Nova B, sans-serif;
   margin-top: 20px;
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
   color: #efbe2c;
-  font-size: 15px; }
+  font-size: 15px;
+  border: 2px solid #efbe2c;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  padding: 10px 25px 10px 25px; }
 
 .stock-list__basket {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);

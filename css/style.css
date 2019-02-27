@@ -367,8 +367,10 @@ html {
   background-image: -o-linear-gradient(left, #efbe2c 0%, #e69824 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(#efbe2c), to(#e69824));
   background-image: linear-gradient(to right, #efbe2c 0%, #e69824 100%);
-  -webkit-border-radius: 40% 40% 0 0 / 60% 60% 40% 40%;
-          border-radius: 40% 40% 0 0 / 60% 60% 40% 40%; }
+  -webkit-border-top-left-radius: 50% 30%;
+          border-top-left-radius: 50% 30%;
+  -webkit-border-top-right-radius: 50% 30%;
+          border-top-right-radius: 50% 30%; }
 
 .page-footer__contact {
   font-family: Proxima Nova B, sans-serif;
@@ -572,12 +574,17 @@ html {
 
 .stock-list__promo {
   display: block;
+  font-family: Proxima Nova B, sans-serif;
   margin-top: 20px;
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
   color: #efbe2c;
-  font-size: 15px; }
+  font-size: 15px;
+  border: 2px solid #efbe2c;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  padding: 10px 25px 10px 25px; }
 
 .stock-list__basket {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);

@@ -72,17 +72,21 @@
 		
 		transform: translateY(-40px);
 		margin-left: 100px;
-		
+
 	}
 }
 
 .stock-list__promo {
 	display: block;
 	
+	font-family: $fonts_bold;
 	margin-top: 20px;
 	align-self: center;
 	color: #efbe2c;
 	font-size: 15px;
+	border: 2px solid #efbe2c;
+	border-radius: 25px;
+	padding: 10px 25px 10px 25px;
 }
 
 .stock-list__basket {
