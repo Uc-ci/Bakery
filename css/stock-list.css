@@ -1,0 +1,71 @@
+.stock-list__name-block {
+  margin-top: 11px; }
+
+.stock-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10px; }
+
+.stock-list__wrapper {
+  background-color: #fffefd;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1); }
+
+.stock-list__pictures {
+  width: 100%; }
+
+.stock-list__image {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.stock-list__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 20px 17px 20px; }
+
+.stock-list__title {
+  font-size: 20px;
+  color: #27282c;
+  max-width: 180px; }
+
+.stock-list__description {
+  font-size: 15px;
+  color: #aaaaaa;
+  max-width: 270px;
+  margin: 0;
+  padding: 10px 0 0 0; }
+
+.stock-list__price {
+  font-family: Proxima Nova B, sans-serif;
+  font-size: 20px;
+  color: #27282c;
+  padding-top: 25px;
+  text-align: center; }
+
+.stock-list__promo {
+  display: block;
+  margin-top: 20px;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  color: #efbe2c;
+  font-size: 15px; }
+
+.stock-list__basket {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1); }

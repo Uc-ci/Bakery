@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media (max-width: 767px) {
   .pictures-block,
   .navigation-block,
@@ -248,7 +249,7 @@
     background-repeat: no-repeat;
     -webkit-background-size: contain;
             background-size: contain;
-    background-position: top; }
+    background-position: center top; }
   .page-footer {
     background: url("../img/ornaments_bottom.png");
     background-repeat: no-repeat;
@@ -456,4 +457,7 @@
     -webkit-border-radius: 25px;
             border-radius: 25px; }
   .product__button {
-    padding: 6px 23px 6px 23px; } }
+    padding: 6px 23px 6px 23px; }
+  /* СТИЛИ ДЛЯ СТРАНИЦЫ АКЦИИ */
+  .stock-body {
+    padding: 0px 340px; } }

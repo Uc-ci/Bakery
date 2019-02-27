@@ -1,17 +1,21 @@
-.page {
+.page,
+.page-body,
+.stock-body {
 	height: 100%;
 }
 
-.page-wrapper:after {
-	content: '';
-	display: block;
+.page-body,
+.stock-body {
+	display: flex;
+	flex-direction: column;
 }
 
-.page-footer, .page-wrapper:after {
-	min-height: 10px;
+.page-main,
+.stock-main {
+	flex: 1 0 auto;
 }
 
-.page-wrapper {
-	min-height: 94%;
-	margin-bottom: -10px;
+.page-footer,
+.stock-footer {
+	flex: 0 0 auto;
 }

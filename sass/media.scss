@@ -261,7 +261,7 @@
 		background-image: url('../img/ornaments__top.png');
 		background-repeat: no-repeat;
 		background-size: contain;
-		background-position: top;
+		background-position: center top;
 	}
 
 	.page-footer {
@@ -472,5 +472,10 @@
 		padding: 6px 23px 6px 23px;
 	}
 
+	/* СТИЛИ ДЛЯ СТРАНИЦЫ АКЦИИ */
+	
+	.stock-body {
+		padding: 0px 340px;
+	}
 
 }
