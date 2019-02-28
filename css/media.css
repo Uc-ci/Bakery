@@ -220,7 +220,54 @@
     -webkit-box-shadow: none;
             box-shadow: none; }
   .product-navigation {
-    margin: auto; } }
+    margin: auto; }
+  /* СТИЛИ ДЛЯ СТРАНИЦЫ АКЦИИ */
+  .stock-list__wrapper {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  .page-header__stock {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center; }
+  .navigation-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .navigation-block__list {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .navigation-block__item {
+    margin: 0 auto;
+    padding-right: 10px; }
+  .stock-list__pictures {
+    width: 668px;
+    height: 280px;
+    margin: 0 auto; }
+  .stock-list__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 60px;
+            border-radius: 60px; }
+  .stock-list {
+    margin: 0 auto; }
+  .navigation-block__down {
+    display: none; } }
 
 @media (max-width: 1199px) {
   .page-header__city,
@@ -246,6 +293,7 @@
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .page-wrapper {
+    margin: 0 auto;
     background-image: url("../img/ornaments__top.png");
     background-repeat: no-repeat;
     -webkit-background-size: contain;

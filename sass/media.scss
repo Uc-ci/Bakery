@@ -231,6 +231,57 @@
 	.product-navigation {
 		margin: auto;
 	}
+
+	/* СТИЛИ ДЛЯ СТРАНИЦЫ АКЦИИ */
+
+	.stock-list__wrapper {
+		background-color: transparent;
+		box-shadow: none;
+	}
+
+	.page-header__stock {
+		display: flex;
+		justify-content: space-around;
+		align-self: center;
+	}
+
+	.navigation-block {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.navigation-block__list {
+		justify-content: flex-end;
+	}
+
+	.navigation-block__item {
+		margin: 0 auto;
+		padding-right: 10px;
+	}
+
+	.stock-list__pictures {
+		width: 668px;
+		height: 280px;
+
+		margin: 0 auto;
+	}
+
+	.stock-list__image {
+		display: block;
+		width: 100%;
+		height: 100%;
+		
+		border-radius: 60px;
+	}
+
+	.stock-list {
+		margin: 0 auto;
+	}
+
+	.navigation-block__down {
+		display: none;
+	}
+
 }
 
 @media (max-width: 1199px) {
@@ -259,6 +310,8 @@
 	}
 
 	.page-wrapper {
+		margin: 0 auto;
+
 		background-image: url('../img/ornaments__top.png');
 		background-repeat: no-repeat;
 		background-size: contain;
