@@ -25,7 +25,7 @@
 .stock-list__image {
   display: block;
   width: 100%;
-  height: auto; }
+  height: 148px; }
 
 .stock-list__content {
   display: -webkit-box;

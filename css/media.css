@@ -531,18 +531,24 @@
     font-size: 16px;
     color: #27282c;
     width: 471px;
-    padding: 16px 0 63px 0; }
+    padding: 16px 0 0 0; }
   .stock-list__price {
     font-size: 24px;
-    padding: 0; }
+    padding: 68px 0 0 0; }
   .stock-list__promo {
     padding-top: 13px;
     padding-bottom: 13px;
-    margin: 0; }
+    margin: 50px 0 0px 0; }
   .navigation-stock__item {
     padding-right: 30px; }
   .social-stock__item {
     padding: 0; }
+  .stock-wrapper {
+    background-image: url("../img/ornaments-top__stock.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+            background-size: contain;
+    background-position: center top; }
   .stock-footer {
     max-width: 1240px;
     width: 100%;
