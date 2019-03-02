@@ -1,0 +1,84 @@
+@import "peremenie.scss";
+
+.about-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.about-list__wrapper {
+	margin-bottom: 60px;
+}
+
+.about-list__heading {
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.about-list__slogan {
+	font-family: $fonts_black;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	line-height: 18px;
+	color: #27282c;
+	width: 245px;
+	margin: 0 auto;
+	text-align: center;
+	text-transform: uppercase;
+
+	&:before {
+		content: '01';
+		display: flex;
+		font-family: $fonts_bold;
+		font-size: 40px;
+		color: #27282c;
+		opacity: 0.2;
+		justify-content: center;
+		position: absolute;
+		margin: 0 auto;
+		width: 250px;
+		transform: translateY(-9px);
+	}
+}
+
+.about-list__slogan--copyright {
+	font-family: 'Arial', sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	display: block;
+	font-size: 15px;
+	color: #27282c;
+	opacity: 0.2;
+}
+
+.about-list__pictures {
+	max-width: 320px;
+}
+
+.about-list__image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.about-list__content {
+	padding: 0 20px;
+}
+
+.about-list__navigation {
+	display: block;
+	font-size: 15px;
+	color: #27282c;
+
+	text-align: center;
+
+	padding-top: 6px;
+}
+
+.about-list__description {
+	font-size: 15px;
+	color: #999999;
+	width: 270px;
+
+	margin: 0;
+	padding: 20px 0 0 0;
+}

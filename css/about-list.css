@@ -1,0 +1,82 @@
+.about-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.about-list__wrapper {
+  margin-bottom: 60px; }
+
+.about-list__heading {
+  margin: 0 auto;
+  padding-bottom: 20px; }
+
+.about-list__slogan {
+  font-family: "Proxima Nova Bl", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 18px;
+  color: #27282c;
+  width: 245px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase; }
+  .about-list__slogan:before {
+    content: '01';
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: Proxima Nova B, sans-serif;
+    font-size: 40px;
+    color: #27282c;
+    opacity: 0.2;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    margin: 0 auto;
+    width: 250px;
+    -webkit-transform: translateY(-9px);
+        -ms-transform: translateY(-9px);
+            transform: translateY(-9px); }
+
+.about-list__slogan--copyright {
+  font-family: 'Arial', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  display: block;
+  font-size: 15px;
+  color: #27282c;
+  opacity: 0.2; }
+
+.about-list__pictures {
+  max-width: 320px; }
+
+.about-list__image {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.about-list__content {
+  padding: 0 20px; }
+
+.about-list__navigation {
+  display: block;
+  font-size: 15px;
+  color: #27282c;
+  text-align: center;
+  padding-top: 6px; }
+
+.about-list__description {
+  font-size: 15px;
+  color: #999999;
+  width: 270px;
+  margin: 0;
+  padding: 20px 0 0 0; }

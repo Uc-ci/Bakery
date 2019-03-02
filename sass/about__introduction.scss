@@ -1,0 +1,47 @@
+@import "peremenie.scss";
+
+.about-header {
+	box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.4);
+	padding-bottom: 10px;
+}
+
+.about__introduction {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 31px;
+	margin-bottom: 93px;
+}
+
+.about__pictures {
+	margin: 0 auto;
+	max-width: 120px;
+	max-height: 117px;
+}
+
+.about__image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.about__title {
+	font-family: $fonts_black;
+	font-size: 24px;
+	color: #27282c; 
+	text-align: center;
+	margin: 0;
+	padding: 22px 0 0 0;
+}
+
+.about__description {
+	font-family: $fonts_bold;
+	font-size: 15px;
+	color: #27282c;
+
+	text-transform: uppercase;
+
+	margin: 0;
+	padding: 5px 0 0 0;
+}
+

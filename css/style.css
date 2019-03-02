@@ -589,3 +589,134 @@ html {
 .stock-list__basket {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1); }
+
+.about-header {
+  -webkit-box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.4);
+  padding-bottom: 10px; }
+
+.about__introduction {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 31px;
+  margin-bottom: 93px; }
+
+.about__pictures {
+  margin: 0 auto;
+  max-width: 120px;
+  max-height: 117px; }
+
+.about__image {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.about__title {
+  font-family: "Proxima Nova Bl", sans-serif;
+  font-size: 24px;
+  color: #27282c;
+  text-align: center;
+  margin: 0;
+  padding: 22px 0 0 0; }
+
+.about__description {
+  font-family: Proxima Nova B, sans-serif;
+  font-size: 15px;
+  color: #27282c;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 5px 0 0 0; }
+
+.about-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.about-list__wrapper {
+  margin-bottom: 60px; }
+
+.about-list__heading {
+  margin: 0 auto;
+  padding-bottom: 20px; }
+
+.about-list__slogan {
+  font-family: "Proxima Nova Bl", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 18px;
+  color: #27282c;
+  width: 245px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase; }
+  .about-list__slogan:before {
+    content: '01';
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: Proxima Nova B, sans-serif;
+    font-size: 40px;
+    color: #27282c;
+    opacity: 0.2;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    margin: 0 auto;
+    width: 250px;
+    -webkit-transform: translateY(-9px);
+        -ms-transform: translateY(-9px);
+            transform: translateY(-9px); }
+
+.about-list__slogan--copyright {
+  font-family: 'Arial', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  display: block;
+  font-size: 15px;
+  color: #27282c;
+  opacity: 0.2; }
+
+.about-list__pictures {
+  max-width: 320px; }
+
+.about-list__image {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.about-list__content {
+  padding: 0 20px; }
+
+.about-list__navigation {
+  display: block;
+  font-size: 15px;
+  color: #27282c;
+  text-align: center;
+  padding-top: 6px; }
+
+.about-list__description {
+  font-size: 15px;
+  color: #999999;
+  width: 270px;
+  margin: 0;
+  padding: 20px 0 0 0; }

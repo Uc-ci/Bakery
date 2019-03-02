@@ -1,11 +1,21 @@
 @charset "UTF-8";
-@media (max-width: 767px) {
+@media (max-width: 720px) {
   .pictures-block,
   .navigation-block,
   .page-header__purchases {
     display: none; } }
 
-@media (min-width: 768px) {
+@media (min-width: 0px) and (max-width: 720px) {
+  .contact-block {
+    display: none; }
+  .page-header__city {
+    display: none; } }
+
+@media (min-width: 720px) and (max-width: 768px) {
+  .page-block__purchases {
+    display: none; } }
+
+@media (min-width: 720px) {
   .product-navigation__item:nth-child(8) {
     display: none; }
   .page-header__block-menu {
@@ -27,13 +37,12 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 24px 20px 0 20px; }
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    padding: 24px 0 0 0; }
   .pictures-block__logo--company {
-    padding-left: 12px; }
+    padding-left: 0; }
   .pictures-block {
     display: -webkit-box;
     display: -webkit-flex;
@@ -63,7 +72,7 @@
     padding: 0;
     padding-right: 42px; }
   .navigation-block__link {
-    font-size: 18px;
+    font-size: 14px;
     color: #27282c;
     text-decoration: none; }
     .navigation-block__link--active {
@@ -153,9 +162,26 @@
     padding: 15px 0 0 0;
     margin: 0; }
   .navigation-block {
-    padding: 0; } }
+    padding: 0; }
+  .page-header__city {
+    font-family: 'Proxima Nova Re', sans-serif;
+    font-size: 14px;
+    color: #515563;
+    cursor: pointer;
+    background: none;
+    border: none;
+    border-bottom: 1px dotted transparent;
+    outline: none;
+    padding: 0;
+    margin: 0; }
+    .page-header__city:after {
+      content: '';
+      display: block;
+      width: 105px;
+      height: 1px;
+      border-bottom: 1px dashed #515563; } }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 720px) and (max-width: 1199px) {
   .product__name-block {
     display: block;
     width: 100%; }
@@ -211,9 +237,9 @@
     display: -ms-flexbox;
     display: flex; }
   .navigation-block__item {
-    padding-right: 20px; }
+    padding-right: 15px; }
   .page-header__navigation-block {
-    margin-left: 60px; }
+    margin-left: 0; }
   .navigation-block__down {
     display: none; }
   .product__name-block {
@@ -221,6 +247,10 @@
             box-shadow: none; }
   .product-navigation {
     margin: auto; }
+  .product-navigation__item {
+    padding: 0; }
+  .pictures-logo__image {
+    display: none; }
   /* СТИЛИ ДЛЯ СТРАНИЦЫ АКЦИИ */
   .stock-list__wrapper {
     background-color: transparent;
@@ -254,6 +284,10 @@
   .navigation-block__item {
     margin: 0 auto;
     padding-right: 10px; }
+  .stock-list__name-block {
+    margin-bottom: 25px; }
+  .stock-list__content {
+    padding: 30px 40px 17px 70px; }
   .stock-list__pictures {
     width: 668px;
     height: 280px;
@@ -264,29 +298,37 @@
     height: 100%;
     -webkit-border-radius: 60px;
             border-radius: 60px; }
+  .stock-list__description {
+    min-width: 650px; }
+  .stock-list__title {
+    font-family: Proxima Nova B, sans-serif;
+    font-size: 23px; }
   .stock-list {
     margin: 0 auto; }
   .navigation-block__down {
     display: none; } }
 
 @media (max-width: 1199px) {
-  .page-header__city,
-  .page-header__contact,
   .benefits,
-  .page-header__basket,
   .product__interactive,
-  .product__interactive-list {
+  .product__interactive-list,
+  .contact-block__time {
     display: none; } }
 
 @media (min-width: 1200px) {
   .product-navigation__item:nth-child(8) {
     display: block; }
+  .page-header__wrapper {
+    padding-left: 20px;
+    padding-right: 20px; }
   .product-navigation__list {
     padding: 0 20px 0 20px;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+  .navigation-block__link {
+    font-size: 16px; }
   .page-header__head-wrapper {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
@@ -309,19 +351,10 @@
     font-family: 'Proxima Nova Re', sans-serif;
     font-size: 14px;
     color: #515563;
-    cursor: pointer;
-    background: none;
-    border: none;
-    border-bottom: 1px dotted transparent;
-    outline: none;
     padding: 0;
     margin: 0; }
-    .page-header__city:after {
-      content: '';
-      display: block;
-      width: 105px;
-      height: 1px;
-      border-bottom: 1px dashed #515563; }
+  .pictures-block__logo--company {
+    padding-left: 9px; }
   .product-navigation {
     width: 100%;
     max-width: 1200px;
@@ -603,4 +636,6 @@
     max-width: 1240px;
     width: 100%;
     background-image: none;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .stock-footer__wrapper {
+    padding: 0; } }

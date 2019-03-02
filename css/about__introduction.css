@@ -1,0 +1,47 @@
+.about-header {
+  -webkit-box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.4);
+  padding-bottom: 10px; }
+
+.about__introduction {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 31px;
+  margin-bottom: 93px; }
+
+.about__pictures {
+  margin: 0 auto;
+  max-width: 120px;
+  max-height: 117px; }
+
+.about__image {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.about__title {
+  font-family: "Proxima Nova Bl", sans-serif;
+  font-size: 24px;
+  color: #27282c;
+  text-align: center;
+  margin: 0;
+  padding: 22px 0 0 0; }
+
+.about__description {
+  font-family: Proxima Nova B, sans-serif;
+  font-size: 15px;
+  color: #27282c;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 5px 0 0 0; }
