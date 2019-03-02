@@ -346,6 +346,32 @@
 		display: none;
 	}
 
+	/* СТИЛИ ДЛЯ СТРАНИЦЫ О ПЕКАРНЕ */
+	
+	.about-list__pictures {
+		height: 335px;
+	}
+
+	.about-list__image {
+		border-radius: 10%;
+	}
+
+	.about-list__navigation {
+		padding-top: 25px;
+		font-family: $fonts__semibold;
+		font-size: 18px;
+	}
+
+	.about-list__description {
+		padding-top: 30px;
+		padding-bottom: 10px;
+		font-family: $fonts__semibold;
+		color: #27282c;
+		font-size: 15px;
+		text-align: center;
+		width: auto;
+		border-bottom: 1px solid #eeeeee; 
+	}
 }
 
 @media (max-width: 1199px) {
@@ -712,4 +738,60 @@
 	.stock-footer__wrapper {
 		padding: 0;
 	}
+
+	/* СТИЛИ ДЛЯ СТРАНИЦЫ О ПЕКАРНЕ */ 
+
+	.about-header {
+		box-shadow: none;
+		padding: 0;
+	}
+
+	.about__introduction {
+		margin-top: 120px;
+		margin-bottom: 160px;
+	}
+
+	.about-list {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.about-list__wrapper {
+		display: flex;
+		flex-direction: row;
+
+		padding: 0 20px;
+	}
+
+	.about-list__slogan {
+		&:before {
+			content: '';
+		}
+	}
+	
+	.about-list__heading {
+		display: flex;
+		
+		padding: 0;
+		margin: 0;
+
+		order: 2;
+	}
+
+	
+	
+	.about-list__pictures {
+		height: 660px;
+
+		order: 1;
+	}
+
+	.about-list__image {
+		border-radius: 60px;
+	}
+
+	.about-list__content {
+		order: 3;
+	}
+
 }

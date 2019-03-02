@@ -306,7 +306,26 @@
   .stock-list {
     margin: 0 auto; }
   .navigation-block__down {
-    display: none; } }
+    display: none; }
+  /* СТИЛИ ДЛЯ СТРАНИЦЫ О ПЕКАРНЕ */
+  .about-list__pictures {
+    height: 335px; }
+  .about-list__image {
+    -webkit-border-radius: 10%;
+            border-radius: 10%; }
+  .about-list__navigation {
+    padding-top: 25px;
+    font-family: "Proxima Nova Sb", sans-serif;
+    font-size: 18px; }
+  .about-list__description {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-family: "Proxima Nova Sb", sans-serif;
+    color: #27282c;
+    font-size: 15px;
+    text-align: center;
+    width: auto;
+    border-bottom: 1px solid #eeeeee; } }
 
 @media (max-width: 1199px) {
   .benefits,
@@ -638,4 +657,60 @@
     background-image: none;
     margin: 0 auto; }
   .stock-footer__wrapper {
-    padding: 0; } }
+    padding: 0; }
+  /* СТИЛИ ДЛЯ СТРАНИЦЫ О ПЕКАРНЕ */
+  .about-header {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0; }
+  .about__introduction {
+    margin-top: 120px;
+    margin-bottom: 160px; }
+  .about-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .about-list__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0 20px; }
+  .about-list__slogan:before {
+    content: ''; }
+  .about-list__heading {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2; }
+  .about-list__pictures {
+    height: 660px;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1; }
+  .about-list__image {
+    -webkit-border-radius: 60px;
+            border-radius: 60px; }
+  .about-list__content {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3; } }

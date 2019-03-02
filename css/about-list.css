@@ -57,12 +57,16 @@
   opacity: 0.2; }
 
 .about-list__pictures {
-  max-width: 320px; }
+  height: 202px; }
 
 .about-list__image {
   display: block;
   width: 100%;
-  height: auto; }
+  height: 100%;
+  -webkit-border-radius: 25%;
+          border-radius: 25%;
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 .about-list__content {
   padding: 0 20px; }
