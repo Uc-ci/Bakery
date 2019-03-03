@@ -325,7 +325,22 @@
     font-size: 15px;
     text-align: center;
     width: auto;
-    border-bottom: 1px solid #eeeeee; } }
+    border-bottom: 1px solid #eeeeee; }
+  /* СТИЛИ ДЛЯ СТРАНИЦЫ ДОСТАВКА */
+  .delivery-information__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; } }
 
 @media (max-width: 1199px) {
   .benefits,
@@ -657,7 +672,9 @@
     background-image: none;
     margin: 0 auto; }
   .stock-footer__wrapper {
-    padding: 0; }
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px; }
   /* СТИЛИ ДЛЯ СТРАНИЦЫ О ПЕКАРНЕ */
   .about-header {
     -webkit-box-shadow: none;
@@ -681,36 +698,89 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    position: relative;
+    height: 650px;
     padding: 0 20px; }
-  .about-list__slogan:before {
-    content: ''; }
   .about-list__heading {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    padding: 0;
+    padding: 55px 0 0 0;
     margin: 0;
-    -webkit-box-ordinal-group: 3;
-    -webkit-order: 2;
-        -ms-flex-order: 2;
-            order: 2; }
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    margin-left: 680px; }
+  .about-list__slogan {
+    font-family: "Proxima Nova Bl", sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    margin: 0;
+    min-width: 490px;
+    letter-spacing: normal;
+    text-align: left; }
+    .about-list__slogan:before, .about-list__slogan:after {
+      display: none; }
+  .about-list__slogan--copyright {
+    font-size: 23px;
+    font-weight: 400;
+    padding-left: 10px; }
   .about-list__pictures {
     height: 660px;
-    -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
-        -ms-flex-order: 1;
-            order: 1; }
+    position: absolute; }
   .about-list__image {
     -webkit-border-radius: 60px;
             border-radius: 60px; }
   .about-list__content {
-    -webkit-box-ordinal-group: 4;
-    -webkit-order: 3;
-        -ms-flex-order: 3;
-            order: 3; } }
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    padding: 0 0 140px 0;
+    margin-left: 680px; }
+  .about-list__navigation {
+    font-family: "Proxima Nova Sb", sans-serif;
+    font-size: 20px;
+    color: #27282c;
+    padding: 0; }
+  .about-list__description {
+    font-family: "Proxima Nova Sb", sans-serif;
+    font-size: 20px;
+    color: #27282c;
+    width: 535px; }
+  /* СТИЛИ ДЛЯ СТРАНИЦЫ ДОСТАВКА */
+  .delivery-information__wrapper {
+    margin: 0;
+    margin-left: 320px;
+    margin-right: 320px; }
+  .delivery-information__title {
+    font-size: 34px;
+    padding-top: 72px;
+    text-align: left; }
+  .delivery-information__time {
+    font-size: 16px;
+    width: auto;
+    padding-top: 51px; }
+  .delivery-information__recommend {
+    font-size: 16px;
+    width: auto; }
+  .delivery-information__price {
+    font-size: 16px; }
+  .delivery-information__price-item {
+    font-size: 16px; }
+  .delivery-information__benefits {
+    font-size: 16px; }
+  .delivery-information__warning {
+    margin-top: 125px;
+    width: 100%;
+    height: 75px; }
+  .delivery-information__description {
+    font-size: 18px;
+    padding: 20px 0 0 20px; }
+  .delivery-information__description--warning {
+    font-size: 18px; } }

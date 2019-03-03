@@ -372,6 +372,14 @@
 		width: auto;
 		border-bottom: 1px solid #eeeeee; 
 	}
+
+	/* СТИЛИ ДЛЯ СТРАНИЦЫ ДОСТАВКА */
+
+	.delivery-information__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 @media (max-width: 1199px) {
@@ -729,7 +737,7 @@
 	.stock-footer {
 		max-width: 1240px;
 		width: 100%;
-		
+
 		background-image: none;
 
 		margin: 0 auto;
@@ -737,6 +745,9 @@
 
 	.stock-footer__wrapper {
 		padding: 0;
+
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 
 	/* СТИЛИ ДЛЯ СТРАНИЦЫ О ПЕКАРНЕ */ 
@@ -758,32 +769,46 @@
 	
 	.about-list__wrapper {
 		display: flex;
-		flex-direction: row;
-
+		flex-wrap: wrap;
+		position: relative;
+		height: 650px;
 		padding: 0 20px;
 	}
 
-	.about-list__slogan {
-		&:before {
-			content: '';
-		}
-	}
-	
 	.about-list__heading {
 		display: flex;
-		
-		padding: 0;
+		padding: 55px 0 0 0;
 		margin: 0;
+		flex: 1 1 auto;
 
-		order: 2;
+		margin-left: 680px;
+		
 	}
 
-	
-	
+	.about-list__slogan {
+		font-family: $fonts_black;
+		font-size: 20px;
+		line-height: 36px;
+		margin: 0;
+
+		min-width: 490px;
+		letter-spacing: normal;
+		text-align: left;
+
+		&:before, &:after {
+			display: none;
+		}
+	}
+
+	.about-list__slogan--copyright {
+		font-size: 23px;
+		font-weight: 400;
+		padding-left: 10px;
+	}
+
 	.about-list__pictures {
 		height: 660px;
-
-		order: 1;
+		position: absolute;
 	}
 
 	.about-list__image {
@@ -791,7 +816,77 @@
 	}
 
 	.about-list__content {
-		order: 3;
+		flex: 1 1 100%;
+		padding: 0 0 140px 0;
+		margin-left: 680px;
+	}
+
+	.about-list__navigation {
+		font-family: $fonts__semibold;
+		font-size: 20px;
+		color: #27282c;
+		padding: 0;
+	}
+
+	.about-list__description {
+		font-family: $fonts__semibold;
+		font-size: 20px;
+		color: #27282c;
+		width: 535px;
+	}
+
+	/* СТИЛИ ДЛЯ СТРАНИЦЫ ДОСТАВКА */
+
+	.delivery-information__wrapper {
+		margin: 0;
+		margin-left: 320px;
+		margin-right: 320px;
+	}
+
+	.delivery-information__title {
+		font-size: 34px;
+		padding-top: 72px;
+
+		text-align: left;
+	}
+
+	.delivery-information__time {
+		font-size: 16px;
+		width: auto;
+
+		padding-top: 51px;
+	}
+
+	.delivery-information__recommend {
+		font-size: 16px;
+		width: auto;
+	}
+
+	.delivery-information__price {
+		font-size: 16px;
+	}
+
+	.delivery-information__price-item {
+		font-size: 16px;	
+	}
+
+	.delivery-information__benefits {
+		font-size: 16px;
+	}
+
+	.delivery-information__warning {
+		margin-top: 125px;
+		width: 100%;
+		height: 75px;
+	}
+
+	.delivery-information__description {
+		font-size: 18px;
+		padding: 20px 0 0 20px; 
+	}
+
+	.delivery-information__description--warning {
+		font-size: 18px;
 	}
 
 }

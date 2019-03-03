@@ -724,3 +724,69 @@ html {
   width: 270px;
   margin: 0;
   padding: 20px 0 0 0; }
+
+.delivery-information__wrapper {
+  padding: 0 20px;
+  margin: 0 auto; }
+
+.delivery-information__title {
+  font-family: "Proxima Nova Bl", sans-serif;
+  font-size: 24px;
+  color: #27282c;
+  text-align: center;
+  margin: 0;
+  padding: 25px 0 0 0; }
+
+.delivery-information__time {
+  font-size: 14px;
+  color: #27282c;
+  width: 260px;
+  margin: 0;
+  padding: 23px 0 0 0; }
+
+.delivery-information__recommend {
+  font-size: 14px;
+  color: #27282c;
+  width: 274px;
+  padding: 25px 0 0 0;
+  margin: 0; }
+
+.delivery-information__price {
+  display: block;
+  font-size: 14px;
+  color: #27282c;
+  margin: 0;
+  padding: 25px 0 0 0; }
+
+.delivery-information__price-list {
+  margin: 0;
+  padding: 0 0 0 22px; }
+
+.delivery-information__price-item {
+  font-size: 14px;
+  color: #27282c; }
+
+.delivery-information__benefits {
+  display: block;
+  font-size: 14px;
+  color: #27282c;
+  margin: 0;
+  padding: 25px 0 0 0; }
+
+.delivery-information__warning {
+  background-color: #eeeeee;
+  width: 280px;
+  height: 80px;
+  margin-top: 55px; }
+
+.delivery-information__description {
+  display: block;
+  margin: 0;
+  padding: 16px 0 0 15px; }
+
+.delivery-information__description--warning {
+  font-family: Proxima Nova B, sans-serif;
+  font-size: 14px;
+  color: #27282c;
+  margin: 0;
+  padding: 0; }
