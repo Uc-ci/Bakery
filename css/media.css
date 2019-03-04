@@ -181,6 +181,14 @@
       height: 1px;
       border-bottom: 1px dashed #515563; } }
 
+@media screen and (max-width: 1199px) {
+  :root {
+    --items: 3; } }
+
+@media screen and (max-width: 900px) {
+  :root {
+    --items: 2; } }
+
 @media (min-width: 720px) and (max-width: 1199px) {
   .product__name-block {
     display: block;
@@ -190,21 +198,26 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
+    max-width: 100%;
     margin: 0 auto; }
   .product__list {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    margin-left: -10px; }
   .product {
     display: -webkit-box;
     display: -webkit-flex;
@@ -214,13 +227,39 @@
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    margin-left: 20px;
+    width: -webkit-calc(100% / var(--items) - 20px);
+    width: calc(100% / var(--items) - 20px);
+    height: 430px;
+    margin-top: 25px; }
   .product__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    height: 100%;
+    margin: 0 auto; }
+  .product__content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100%; }
   .product__name {
     max-width: 220px; }
   .product__description {
@@ -311,8 +350,8 @@
   .about-list__pictures {
     height: 335px; }
   .about-list__image {
-    -webkit-border-radius: 10%;
-            border-radius: 10%; }
+    width: 720px;
+    margin: 0 auto; }
   .about-list__navigation {
     padding-top: 25px;
     font-family: "Proxima Nova Sb", sans-serif;
@@ -513,7 +552,7 @@
     display: -ms-flexbox;
     display: flex;
     margin-top: 60px;
-    margin-left: 40px;
+    margin-left: 60px;
     width: 100%; }
   .product__name-text {
     font-family: Proxima Nova B, sans-serif;
@@ -646,7 +685,10 @@
             flex-direction: row;
     background-color: transparent;
     -webkit-box-shadow: none;
-            box-shadow: none; }
+            box-shadow: none;
+    background-image: url("../img/stock__ornaments.png");
+    background-repeat: no-repeat;
+    background-position: 70% 75%; }
   .stock-list__pictures {
     width: 820px;
     height: 380px; }
@@ -668,7 +710,8 @@
     -webkit-border-radius: 60px;
             border-radius: 60px;
     -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 6, 0.15);
-            box-shadow: 0px 3px 10px 0px rgba(0, 0, 6, 0.15); }
+            box-shadow: 0px 3px 10px 0px rgba(0, 0, 6, 0.15);
+    background-color: #ffffff; }
   .stock-list__title {
     font-family: Proxima Nova B, sans-serif;
     font-size: 23px;
@@ -738,7 +781,7 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    padding: 55px 0 0 0;
+    padding: 65px 0 0 0;
     margin: 0;
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 auto;
@@ -756,7 +799,7 @@
     .about-list__slogan:before, .about-list__slogan:after {
       display: none; }
   .about-list__slogan--copyright {
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 400;
     padding-left: 10px; }
   .about-list__pictures {
@@ -770,13 +813,14 @@
     -webkit-flex: 1 1 100%;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
-    padding: 0 0 140px 0;
+    padding: 0 0 155px 0;
     margin-left: 680px; }
   .about-list__navigation {
     font-family: "Proxima Nova Sb", sans-serif;
     font-size: 20px;
     color: #27282c;
-    padding: 0; }
+    padding: 0;
+    text-align: left; }
   .about-list__description {
     font-family: "Proxima Nova Sb", sans-serif;
     font-size: 20px;
@@ -814,7 +858,10 @@
   .delivery-information__description--warning {
     font-size: 18px; }
   /* СТИЛИ ДЛЯ СТРАНИЦЫ Контакты */
+  .contact-body {
+    background-image: none; }
   .contact__wrapper {
+    background-image: none;
     min-width: 100%; }
   .contact-header {
     max-width: 1240px;
@@ -835,8 +882,8 @@
     position: absolute;
     z-index: 3;
     width: 450px;
-    margin-left: 730px;
-    margin-top: 170px; }
+    margin-top: 170px;
+    left: 60%; }
   .contact-block__wrapper {
     background-color: #fffefd;
     -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
@@ -855,19 +902,21 @@
   .contact-block__mode {
     font-size: 24px;
     line-height: 30px; }
-    .contact-block__mode:after {
+    .contact-block__mode:before {
       content: '';
-      display: inline-block;
+      display: block;
       background-image: url("../img/clock(1).png");
       background-repeat: no-repeat;
       -webkit-background-size: contain;
               background-size: contain;
       background-position: center;
+      position: absolute;
+      left: 30px;
+      -webkit-transform: translateY(2px);
+          -ms-transform: translateY(2px);
+              transform: translateY(2px);
       width: 36px;
-      height: 24px;
-      -webkit-transform: translateX(-320px);
-          -ms-transform: translateX(-320px);
-              transform: translateX(-320px); }
+      height: 24px; }
   .mobile {
     display: none; }
   .contact-block__addres--wrapper {
@@ -875,19 +924,21 @@
   .contact-block__address {
     font-size: 24px;
     line-height: 30px; }
-    .contact-block__address:after {
+    .contact-block__address:before {
       content: '';
-      display: inline-block;
+      display: block;
       background-image: url("../img/clock(2).png");
       background-repeat: no-repeat;
       -webkit-background-size: contain;
               background-size: contain;
       background-position: center;
+      position: absolute;
       width: 36px;
       height: 24px;
-      -webkit-transform: translateX(-225px);
-          -ms-transform: translateX(-225px);
-              transform: translateX(-225px); }
+      left: 30px;
+      -webkit-transform: translateY(2px);
+          -ms-transform: translateY(2px);
+              transform: translateY(2px); }
   .contact-block__address-item {
     font-size: 20px;
     line-height: 36px; }
@@ -898,19 +949,21 @@
   .contact-block__mobile {
     font-size: 24px;
     line-height: 30px; }
-    .contact-block__mobile:after {
+    .contact-block__mobile:before {
       content: '';
-      display: inline-block;
+      display: block;
       background-image: url("../img/clock(3).png");
       background-repeat: no-repeat;
       -webkit-background-size: contain;
               background-size: contain;
       background-position: center;
+      position: absolute;
       width: 36px;
       height: 24px;
-      -webkit-transform: translateX(-155px);
-          -ms-transform: translateX(-155px);
-              transform: translateX(-155px); }
+      left: 30px;
+      -webkit-transform: translateY(2px);
+          -ms-transform: translateY(2px);
+              transform: translateY(2px); }
   .contact-block__email--wrapper {
     font-size: 20px;
     line-height: 36px;
@@ -918,7 +971,7 @@
   .contact-block__email {
     font-size: 24px;
     line-height: 30px; }
-    .contact-block__email:after {
+    .contact-block__email:before {
       content: '';
       display: inline-block;
       background-image: url("../img/clock(4).png");
@@ -928,9 +981,11 @@
       background-position: center;
       width: 36px;
       height: 24px;
-      -webkit-transform: translateX(-235px);
-          -ms-transform: translateX(-235px);
-              transform: translateX(-235px); }
+      position: absolute;
+      left: 30px;
+      -webkit-transform: translateY(2px);
+          -ms-transform: translateY(2px);
+              transform: translateY(2px); }
   .contact-block__map {
     height: 920px;
     position: static;

@@ -202,6 +202,18 @@
 
 }
 
+@media screen and (max-width: 1199px) {
+	:root {
+		--items: 3;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	:root {
+		--items: 2;
+	}
+}
+
 @media (min-width: 720px) and (max-width: 1199px) {
 	.product__name-block {
 		display: block;
@@ -210,22 +222,41 @@
 
 	.product__list-wrapper {
 		display: flex;
+		width: 100%;
+		max-width: 100%;
 		margin: 0 auto;
 	}
 
 	.product__list {
 		display: flex;
-		flex-direction: column;
-		align-items: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		flex-basis: 100%;
+		margin-left: -10px; 
+		
 	}
 
 	.product {
 		display: flex;
 		flex-direction: column;
+		margin-left: 20px;
+		width: calc(100% / var(--items) - 20px);
+		height: 430px;
+		margin-top: 25px; 
 	}
 
 	.product__wrapper {
+		display: flex;
 		flex-direction: column;
+		height: 100%;
+		margin: 0 auto;
+	}
+
+	.product__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
 	}
 
 	.product__name {
@@ -353,7 +384,8 @@
 	}
 
 	.about-list__image {
-		border-radius: 10%;
+		width: 720px;
+		margin: 0 auto;
 	}
 
 	.about-list__navigation {
@@ -548,7 +580,7 @@
 		box-shadow: none;
 		display: flex;
 		margin-top: 60px;
-		margin-left: 40px;
+		margin-left: 60px;
 		width: 100%;
 	}
 
@@ -696,6 +728,9 @@
 
 		background-color: transparent;
 		box-shadow: none;
+		background-image: url('../img/stock__ornaments.png');
+		background-repeat: no-repeat;
+		background-position: 70% 75%;
 	}
 
 	.stock-list__pictures {
@@ -720,6 +755,8 @@
 
 		border-radius: 60px;
 		box-shadow: 0px 3px 10px 0px rgba(0, 0, 6, 0.15);
+
+		background-color: #ffffff;
 	}
 
 	.stock-list__title {
@@ -809,7 +846,7 @@
 
 	.about-list__heading {
 		display: flex;
-		padding: 55px 0 0 0;
+		padding: 65px 0 0 0;
 		margin: 0;
 		flex: 1 1 auto;
 
@@ -833,7 +870,7 @@
 	}
 
 	.about-list__slogan--copyright {
-		font-size: 23px;
+		font-size: 20px;
 		font-weight: 400;
 		padding-left: 10px;
 	}
@@ -849,7 +886,7 @@
 
 	.about-list__content {
 		flex: 1 1 100%;
-		padding: 0 0 140px 0;
+		padding: 0 0 155px 0;
 		margin-left: 680px;
 	}
 
@@ -858,6 +895,7 @@
 		font-size: 20px;
 		color: #27282c;
 		padding: 0;
+		text-align: left;
 	}
 
 	.about-list__description {
@@ -923,7 +961,12 @@
 
 	/* СТИЛИ ДЛЯ СТРАНИЦЫ Контакты */ 
 
+	.contact-body {
+		background-image: none;
+	}
+
 	.contact__wrapper {
+		background-image: none;
 		min-width: 100%;
 	}
 
@@ -943,8 +986,8 @@
 		position: absolute;
 		z-index: 3;
 		width: 450px;
-		margin-left: 730px;
 		margin-top: 170px;
+		left: 60%;
 	}
 
 	.contact-block__wrapper {
@@ -972,18 +1015,23 @@
 		font-size: 24px;
 		line-height: 30px;
 
-		&:after {
+		&:before {
 		content: '';
-		display: inline-block;	
+		display: block;	
 		background-image: url('../img/clock(1).png');
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center;
 		
+		position: absolute;
+			
+		left: 30px;
+
+		transform: translateY(2px);
+			
 		width: 36px;
 		height: 24px;
-
-		transform: translateX(-320px);
+		
 	}
 	}
 
@@ -999,18 +1047,21 @@
 		font-size: 24px;
 		line-height: 30px;
 			
-			&:after {
+			&:before {
 		content: '';
-		display: inline-block;	
+		display: block;	
 		background-image: url('../img/clock(2).png');
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center;
 		
+		position: absolute;
+
 		width: 36px;
 		height: 24px;
 
-		transform: translateX(-225px);
+		left: 30px;
+		transform: translateY(2px);
 		}
 	}
 
@@ -1030,18 +1081,21 @@
 		font-size: 24px;
 		line-height: 30px;
 
-		&:after {
+		&:before {
 		content: '';
-		display: inline-block;	
+		display: block;	
 		background-image: url('../img/clock(3).png');
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center;
 		
+		position: absolute;
+
 		width: 36px;
 		height: 24px;
 
-		transform: translateX(-155px);
+		left: 30px;
+		transform: translateY(2px);
 		}
 	}
 
@@ -1055,7 +1109,7 @@
 		font-size: 24px;
 		line-height: 30px;
 
-		&:after {
+		&:before {
 		content: '';
 		display: inline-block;	
 		background-image: url('../img/clock(4).png');
@@ -1066,7 +1120,10 @@
 		width: 36px;
 		height: 24px;
 
-		transform: translateX(-235px);
+		position: absolute;
+
+		left: 30px;
+		transform: translateY(2px);
 		}
 	}
 
