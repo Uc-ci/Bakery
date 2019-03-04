@@ -1,0 +1,75 @@
+.contact-block__title {
+  font-family: "Proxima Nova Bl", sans-serif;
+  font-size: 32px;
+  line-height: 48px;
+  color: #27282c;
+  text-align: center;
+  margin: 0;
+  padding: 25px 0 0 0; }
+
+.contact-block__reception {
+  font-size: 17px;
+  line-height: 24px;
+  color: #27282c;
+  padding: 22px 0 0 55px; }
+
+.contact-block__mode {
+  font-family: Proxima Nova B, sans-serif;
+  font-size: 20px;
+  display: block; }
+
+.contact-block__addres--wrapper {
+  padding-left: 55px; }
+
+.contact-block__address {
+  font-family: Proxima Nova B, sans-serif;
+  font-size: 20px;
+  display: block;
+  padding-top: 20px; }
+
+.contact-block__address-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 0; }
+
+.contact-block__address-item {
+  font-size: 17px;
+  line-height: 24px;
+  color: #27282c; }
+
+.contact-block__tel--wrapper {
+  font-size: 17px;
+  line-height: 24px;
+  color: #27282c;
+  padding: 25px 0 0 55px; }
+
+.contact-block__mobile {
+  font-family: Proxima Nova B, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #27282c;
+  display: block; }
+
+.contact-block__email--wrapper {
+  font-size: 17px;
+  line-height: 24px;
+  color: #27282c;
+  padding: 25px 0 0 55px; }
+
+.contact-block__email {
+  font-family: Proxima Nova B, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #27282c;
+  display: block; }
+
+.contact-block__map {
+  height: 280px;
+  width: 100%; }
+
+.contact-footer {
+  position: absolute;
+  top: 100%;
+  bottom: 100;
+  left: 0;
+  right: 0; }
