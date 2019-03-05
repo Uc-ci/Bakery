@@ -192,9 +192,6 @@
     --items: 2; } }
 
 @media (min-width: 640px) and (max-width: 1200px) {
-  .product__name-block {
-    display: block;
-    width: 100%; }
   .product__list-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -578,10 +575,9 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 60px;
-    margin-left: 70px;
-    width: 100%;
-    width: 1200px; }
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 60px; }
   .product__name-text {
     font-family: Proxima Nova B, sans-serif;
     font-size: 30px;
