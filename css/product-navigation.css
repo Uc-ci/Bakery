@@ -46,3 +46,21 @@
     color: #27282c;
     -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1); }
+
+.headhesive {
+  position: fixed;
+  width: 100%;
+  right: 0;
+  left: 0;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  background-color: #ffffff;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+.headhesive--stick {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0); }

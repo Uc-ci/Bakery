@@ -1,3 +1,9 @@
+var options = {
+  offset: 800
+}
+
+var header = new Headhesive('.product-navigation', options);
+
 function initMap() {
   // The location of Uluru
   var uluru = {lat: 60.935228550950804, lng: 76.57331127098928};
@@ -264,3 +270,5 @@ function initMap() {
     icon: 'img/location-pointer.png'
   	});
 }
+
+
