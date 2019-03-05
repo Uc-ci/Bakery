@@ -24,7 +24,7 @@
 	}
 }
 
-@media (min-width: 720px) {
+@media (min-width: 640px) {
 	.product-navigation__item:nth-child(8) {
 		display: none;
 	}
@@ -214,7 +214,7 @@
 	}
 }
 
-@media (min-width: 720px) and (max-width: 1199px) {
+@media (min-width: 640px) and (max-width: 1200px) {
 	.product__name-block {
 		display: block;
 		width: 100%;
@@ -442,14 +442,26 @@
 	}
 
 	.contact-block__map {
-	top: 85px;
+		top: 0px;
+		margin-top: 25px;
+	}
+
+	.page-footer__wrapper {
+		border-radius: 0;
+	}
+	
+	.contact__social-block {
+		padding-top: 15px;
+		padding-bottom: 5px;
+	}
+
+	.contact-block__tel {
+		display: none;
 	}
 }
 
 @media (max-width: 1199px) {
 	.benefits,
-	.product__interactive,
-	.product__interactive-list,
 	.contact-block__time {
 		display: none;
 	}
@@ -986,7 +998,7 @@
 		position: absolute;
 		z-index: 3;
 		width: 450px;
-		margin-top: 170px;
+		margin-top: 20px;
 		left: 60%;
 	}
 
