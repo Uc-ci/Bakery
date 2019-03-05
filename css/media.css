@@ -30,6 +30,8 @@
     display: none; }
   .page-body {
     font-size: 14px; }
+  .page-header {
+    margin-bottom: auto; }
   .page-header__wrapper {
     background-color: transparent; }
   .page-header__head-wrapper {
@@ -442,20 +444,26 @@
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
-  .page-wrapper {
-    margin: 0 auto;
+            justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto; }
+  .page-body__wrapper {
     background-image: url("../img/ornaments__top.png");
     background-repeat: no-repeat;
     -webkit-background-size: contain;
             background-size: contain;
-    background-position: center top; }
+    background-position: center top;
+    margin-bottom: auto; }
+  .page-wrapper {
+    margin: 0 auto; }
   .page-footer {
     background: url("../img/ornaments_bottom.png");
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: 10px;
     -webkit-background-size: cover;
-            background-size: cover; }
+            background-size: cover;
+    margin-top: auto; }
   .page-header__city {
     font-family: 'Proxima Nova Re', sans-serif;
     font-size: 14px;
@@ -522,7 +530,13 @@
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 100%; }
+    height: 100%;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+    .product__wrapper:hover {
+      -webkit-box-shadow: 20px 10px 65px -15px rgba(0, 0, 0, 0.4);
+              box-shadow: 20px 10px 65px -15px rgba(0, 0, 0, 0.4); }
   .product__content {
     display: -webkit-box;
     display: -webkit-flex;
@@ -542,13 +556,19 @@
     margin-bottom: auto; }
   .product__interactive {
     margin-top: auto;
-    margin-bottom: 27px; }
+    margin-bottom: 27px;
+    margin-left: 3px;
+    margin-right: 3px; }
   .product__total {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0; }
+    padding: 0;
+    padding-bottom: 10px; }
   .product__price {
     font-size: 24px; }
   .product__name-block {
@@ -559,8 +579,9 @@
     display: -ms-flexbox;
     display: flex;
     margin-top: 60px;
-    margin-left: 60px;
-    width: 100%; }
+    margin-left: 70px;
+    width: 100%;
+    width: 1200px; }
   .product__name-text {
     font-family: Proxima Nova B, sans-serif;
     font-size: 30px;
@@ -633,7 +654,9 @@
     color: #aaaaaa; }
   .contact-block__tel {
     font-size: 17.4px;
-    font-family: Proxima Nova B, sans-serif; }
+    font-family: Proxima Nova B, sans-serif;
+    cursor: pointer;
+    outline: none; }
   .product-navigation__link {
     font-size: 18px;
     font-family: Proxima Nova B, sans-serif;
